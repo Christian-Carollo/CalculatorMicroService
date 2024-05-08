@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: random-number-generator-microservice
+  output:
+    ansi:
+      enabled: always
+logging:
+  level:
+    root: INFO
+  pattern:
+     console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36}.%M() : %m%n)"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+server:
+  port: 8082
